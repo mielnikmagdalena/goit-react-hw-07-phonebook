@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setFilter } from 'redux/filterSlice';
 import { nanoid } from 'nanoid';
-import css from './Filter.module.css';
+import styles from './Filter.module.css';
 
 const Filter = () => {
   const dispatch = useDispatch();
@@ -13,10 +13,10 @@ const Filter = () => {
   };
 
   return (
-    <div className={css.filter}>
+    <div className={styles.filter}>
       <label htmlFor={filterId}>Find contacts by name</label>
       <input
-        className={css.inputFilter}
+        className={styles.inputFilter}
         id={filterId}
         type="search"
         onChange={event => handleChange(event)}

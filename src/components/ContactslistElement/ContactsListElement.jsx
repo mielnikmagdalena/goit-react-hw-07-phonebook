@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './ContactsListElement.module.css';
+import styles from './ContactsListElement.module.css';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/operations';
 import PropTypes from 'prop-types';
@@ -12,10 +12,10 @@ const ContactsListElement = ({ contact }) => {
   };
 
   return (
-    <div className={css.contactLi}>
-      <span className={css.contact}>{contact.name}:</span>
-      <span className={css.contact}>{contact.phone}</span>
-      <button type="button" className={css.btnDelete} onClick={handleClick}>
+    <div className={styles.contactLi}>
+      <span className={styles.contact}>{contact.name}:</span>
+      <span className={styles.contact}>{contact.phone}</span>
+      <button type="button" className={styles.btnDelete} onClick={handleClick}>
         Delete
       </button>
     </div>
