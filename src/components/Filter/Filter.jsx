@@ -16,7 +16,7 @@ const Filter = () => {
     <div className={styles.filter}>
       <label htmlFor={filterId}>Find contacts by name</label>
       <input
-        className={styles.inputFilter}
+        className={styles.filter}
         id={filterId}
         type="search"
         onChange={event => handleChange(event)}

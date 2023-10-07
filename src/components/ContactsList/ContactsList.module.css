@@ -1,21 +1,29 @@
-.contactsList {
-  padding-left: 20px;
+.list {
+  list-style: none;
+  padding: 0;
 }
-.contactLi {
-  margin-bottom: 4px;
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 8px;
 }
 .contact {
   margin-right: 8px;
 }
-.btnDelete {
-  font-size: 10px;
-  font-weight: 500;
-  border-color: aliceblue;
+.button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
   border-radius: 4px;
-  outline: none;
+  cursor: pointer;
 }
-.btnDelete:hover,
-.btnDelete:focus {
+.button:hover,
+.button:focus {
   color: white;
   background-color: rgb(69, 69, 205);
 }

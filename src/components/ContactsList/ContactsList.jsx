@@ -18,11 +18,11 @@ const ContactsList = () => {
   };
 
   return (
-    <div className={styles.contactsListBox}>
+    <div className={styles.list}>
       <h4>
         You have {items.length} contact{items.length === 1 ? null : 's'}
       </h4>
-      <ul className={styles.contactsList}>
+      <ul className={styles.item}>
         {!!isLoading && <b>Loading contacts...</b>}
         {!!items &&
           items.map(contact => (
@@ -32,7 +32,7 @@ const ContactsList = () => {
                 <span className={styles.contact}>{contact.phone}</span>
                 <button
                   type="button"
-                  className={styles.btnDelete}
+                  className={styles.button}
                   onClick={() => handleDeleteContact(contact.id)}
                 >
                   Delete
